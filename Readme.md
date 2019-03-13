@@ -1,14 +1,14 @@
 ### From site-point book Crud with Vue, Mongo
 
-Installed latest node 10.15.3, mongo 4.0.6 with Compass
-Add mongo to PATH
-Run with mongod --dbpath="C:\dataMongo\"
-Interactive shell with 'mongo'
-Installed latest Postman, v7.0.5
+- Installed latest node 10.15.3, mongo 4.0.6 with Compass
+- Add mongo to PATH
+- Run with mongod --dbpath="C:\dataMongo\"
+- Interactive shell with 'mongo'
+- Installed latest Postman, v7.0.5
 
 mkdir -p vocab-builder/server/api/{controllers,models,routes}
 
-///
+```
 .
 └── server
     ├── api
@@ -20,8 +20,8 @@ mkdir -p vocab-builder/server/api/{controllers,models,routes}
     │       └── vocabRoutes.js
     ├── package.json
     └── server.js
-///
-
+```
+```
 cd server
     npm init -y
 
@@ -40,7 +40,7 @@ app.get('/', (req, res) => {
 });
 
 console.log(`Server started on port ${port}`);
-///
+```
 
 Add routes
 - GET /words—return a list of all words
@@ -50,12 +50,14 @@ Add routes
 - DELETE /words/:wordId—delete a single word
 
 Add model, routes and controller code
+
 Can then use Postman to test
 
 //===============
 
 npm install -g @vue/cli
-In top directory, vue create frontend
+
+In top directory, vue create client
 
 No vuex
 - ? Please pick a preset: Manually select features
@@ -69,7 +71,7 @@ No vuex
 rm files generated files in frontend dir
 
 make this structure
-///
+```
 .
 ├── App.vue
 ├── assets
@@ -86,7 +88,7 @@ make this structure
     ├── Show.vue
     ├── Test.vue
     └── Words.vue
-///
+```
 
 npm i axios semantic-ui-css vue-flash-message
 
